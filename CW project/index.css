@@ -61,11 +61,150 @@ margin-right: 5px;
     width: 70%;
     margin: auto;
     margin-top: 20px;
+    font-family: Arial,Arial, Helvetica, sans-serif;
 }
-.nav3 > a {
+.Mdrop {
+    display: none;
+}
+.Wdrop {
+    display: none;
+}
+.Jdrop {
+    display: none;
+}
+.Ndrop {
+    display: none;
+}
+.Sdrop {
+    display: none;
+}
+.Rdrop {
+    display: none;
+}
+.Ldrop{
+    display: none;
+}
+.Cdrop{
+    display: none;
+}
+.Wdrop div {
+    width: 40%;
+}
+
+.Wdrop img{
+   width: 100%; 
+}
+#drop1:hover .Wdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Mdrop div {
+    width: 40%;
+}
+.Mdrop img{
+   width: 100%; 
+}
+#drop2:hover .Mdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Jdrop div {
+    width: 40%;
+}
+.Jdrop img{
+   width: 100%; 
+}
+#drop3:hover .Jdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Ndrop div {
+    width: 40%;
+}
+.Ndrop img{
+   width: 100%; 
+}
+#drop4:hover .Ndrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+.Sdrop div {
+    width: 40%;
+}
+.Sdrop img{
+   width: 100%; 
+}
+#drop5:hover .Sdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Rdrop div {
+    width: 40%;
+}
+.Rdrop img{
+   width: 100%; 
+}
+#drop6:hover .Rdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Cdrop div {
+    width: 40%;
+}
+.Cdrop img{
+   width: 100%; 
+}
+#drop7:hover .Cdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Ldrop div {
+    width: 40%;
+}
+.Ldrop img{
+   width: 100%; 
+}
+#drop8:hover .Ldrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.nav3 a {
 color: black;
 text-decoration: none;
 margin-bottom: 10px;
+display: block;
+font-weight: bolder;
+font-size: small;
 }
 #cont1 {
     background-image: url("https://i.pinimg.com/originals/d7/99/51/d79951fab15f0baad7aa96ff0ee14b05.jpg"),
@@ -158,34 +297,38 @@ h2 {
     color: white;
 }
 
-.cont3 >div div:nth-child(1){
+.cont3 > div > div {
     height: 400px;
+}
+
+.cont3 >div div:nth-child(1){
+ 
     background-image: url("https://i.pinimg.com/originals/8a/3f/d6/8a3fd60fc9aa0550bd7d3b1457d8d208.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .cont3 > div div:nth-child(2){
-    height: 400px;
+   
     background-image: url("https://th.bing.com/th/id/OIP.UhgPZsJSlXG69FNCVAmyaAHaJ4?pid=ImgDet&rs=1");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(3){
-    height: 400px;
+    
     background-image: url("https://th.bing.com/th/id/OIP.-oDpZeZaNueinkkDlQ3rxAHaKT?pid=ImgDet&rs=1");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(4){
-    height: 400px;
+ 
     background-image: url("https://i.pinimg.com/originals/17/ed/da/17eddaa417f3609c82c8fb8dc58d8063.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(5){
-    height: 400px;
+ 
     background-image: url("https://th.bing.com/th/id/OIP.l5V0Vo9xkGz24d8s3UKONAHaJ4?pid=ImgDet&rs=1");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(6){
-    height: 400px;
+ 
     background-image: url("https://i.pinimg.com/originals/f5/6e/88/f56e88657e1457fefcfb2e0bb4452e7e.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -194,7 +337,7 @@ h2 {
    margin: auto;
     background-color: white;
     width: 80%;
-    height: 1000px;
+ 
 }
 .cont4 >div {
     width: 100%;
@@ -235,7 +378,7 @@ h2 {
    }
    .cont2 {
   display: grid;
-  grid-template-columns: repeat(1,1fr);
+  grid-template-columns: repeat(3,1fr);
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
