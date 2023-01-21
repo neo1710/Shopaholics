@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+* {
+            font-family: Arial, Helvetica, sans-serif;
+         }
+        
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .nav1 {
+            display: flex;
+            background-color: black;
+            justify-content: space-between;
+            align-items: center;
+            height: 40px;
+            width: 100%;
+        }
+        .nav1 div {
+            display: flex;
+            align-items: center;
+        }
+        .nav1 h5 {
+            color: white;
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+        .nav1 a {
+        color: white;
+        margin-right: 5px;
+        }
+        .nav2 {
+            display: flex;
+          width: 100%;
+          justify-content: space-between;
+            align-items: center;
+         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            
+        }
+        .nav2 > a{
+            width: 15%;
+        }
+        .nav2 >a> img {
+            width: 100%;
+        
+        }
+        .nav2 > div {
+            width: 20%;
+        }
+        .nav2>div>button>img{
+            width: 50%;
+        }
+        .nav2 > div >button {
+            backface-visibility: hidden;
+            width: 20%;
+          height: 40px;
+            background-color: white;
+            border: white;
+           
+        }
+        .nav3 {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            width: 70%;
+            margin: auto;
+            margin-top: 20px;
+        }
+        .Mdrop {
+    display: none;
+}
+.Wdrop {
+    display: none;
+}
+.Jdrop {
+    display: none;
+}
+.Ndrop {
+    display: none;
+}
+.Sdrop {
+    display: none;
+}
+.Rdrop {
+    display: none;
+}
+.Ldrop{
+    display: none;
+}
+.Cdrop{
+    display: none;
+}
+.Wdrop div {
+    width: 40%;
+}
+
+.Wdrop img{
+   width: 100%; 
+}
+#drop1:hover .Wdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Mdrop div {
+    width: 40%;
+}
+.Mdrop img{
+   width: 100%; 
+}
+#drop2:hover .Mdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Jdrop div {
+    width: 40%;
+}
+.Jdrop img{
+   width: 100%; 
+}
+#drop3:hover .Jdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Ndrop div {
+    width: 40%;
+}
+.Ndrop img{
+   width: 100%; 
+}
+#drop4:hover .Ndrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+.Sdrop div {
+    width: 40%;
+}
+.Sdrop img{
+   width: 100%; 
+}
+#drop5:hover .Sdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Rdrop div {
+    width: 40%;
+}
+.Rdrop img{
+   width: 100%; 
+}
+#drop6:hover .Rdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Cdrop div {
+    width: 40%;
+}
+.Cdrop img{
+   width: 100%; 
+}
+#drop7:hover .Cdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Ldrop div {
+    width: 40%;
+}
+.Ldrop img{
+   width: 100%; 
+}
+#drop8:hover .Ldrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+       
+        .nav3 a {
+color: black;
+text-decoration: none;
+margin-bottom: 10px;
+display: block;
+font-weight: bolder;
+font-size: small;
+}
+
+.search:hover{
+   background-color: grey;
+}
+
+.searchD {
+    width: 20%;
+    margin: auto;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.searchD > button {
+    background-color: black;
+    color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgb(175, 180, 178);
+    width: 80%;
+    gap: 10px;
+    margin: auto;
+}
+#container > div {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+#container > div img{
+    width: 100%;
+}
+#container > div > h2 {
+
+    text-align: center;
+}
+#container > div > h4 {
+  
+    text-align: center;
+}
+#container > div > p{
+    
+    text-align: center;
+}
+#container > div > h1 {
+ 
+    text-align: center;
+}
+#container > div > button {
+    display: block;
+   color: black;
+  margin: auto;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+            </style>
+        </head>
+        <body>
+        
+            <div class="nav1">
+                <div><h5>APP EXCLUSIVE | $100 off $250 | $200 off $500 | Code: 1176</h5>
+                <a href="">Exclusions & Details</a>
+                <a href="">DOWNLOAD THE APP</a>
+                <a href="">SHOP NOW</a></div>
+                <a href="">Enable Accessibilty</a>
+                
+                    </div>
+                    <div class="nav2">
+                        <p>Free Shipping on Orders $50+ <a href="./details.html">Details</a></p>
+                        <a href="./index.html"><img src="./shopaholics2.png" alt=""></a>
+                        <div><button  onclick="window.location.href='./search.html'" class="search"><img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt=""></button>
+                            <button><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+                        <button><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
+                
+                    </div>
+                
+                    
+                    <div class="nav3">
+                        <div id="drop1"><a  href="">WOMEN</a>
+                         <div class="Wdrop" >
+                         <div><h4>New Collection</h4>
+                                 <a href="">Shirts</a>
+                                 <a href="">Jeans</a>
+                                 <a href="">Tops</a> 
+                             
+                             <h4>Vintage</h4>
+                         <a href="">Vintage Denims</a>
+                          <a href="">Vintage Lether Jackets</a>
+                          <a href="">Vintage Boots</a>  
+                     </div> 
+                 
+                                 <div><img src="https://www.instaloverz.com/wp-content/uploads/2016/07/18-edgy-womens-fashion.jpg" alt=""></div>       
+                         </div>
+                     </div> 
+                         <div id="drop2"><a href="">MEN</a>
+                         <div class="Mdrop">
+                             <div><h4>New Collection</h4>
+                            <a href="">JEANS</a>
+                            <a href="">Shirts</a>
+                            <a href="">Denim Jackets</a></div>
+                            <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                         </div>
+                     </div>
+                        <div id="drop3"> <a href="">JEANS</a>
+                         <div class="Jdrop">
+                             <div><h4>New Collection</h4>
+                            <a href="">JEANS</a>
+                            <a href="">Shirts</a>
+                            <a href="">Denim Jackets</a></div>
+                            <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                         </div>
+                     </div>
+                        <div id="drop4"> <a href="">NEW</a>
+                         <div class="Ndrop">
+                             <div><h4>New Collection</h4>
+                            <a href="">JEANS</a>
+                            <a href="">Shirts</a>
+                            <a href="">Denim Jackets</a></div>
+                            <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                         </div>
+                     
+                     </div>
+                         <div id="drop5"> <a href="">SALE</a>
+                             <div class="Sdrop">
+                             <div><h4>New Collection</h4>
+                            <a href="">JEANS</a>
+                            <a href="">Shirts</a>
+                            <a href="">Denim Jackets</a></div>
+                            <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                         </div>
+                         </div>
+                      <div id="drop6"> <a href="">STYLE TRIAL RENTAL</a>
+                         <div class="Rdrop">
+                             <div><h4>New Collection</h4>
+                            <a href="">JEANS</a>
+                            <a href="">Shirts</a>
+                            <a href="">Denim Jackets</a></div>
+                            <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                         </div>
+                     
+                     </div>
+                         <div id="drop7"> <a href="">COMMUNITY</a>
+                             <div class="Cdrop">
+                                 <div><h4>New Collection</h4>
+                                <a href="">JEANS</a>
+                                <a href="">Shirts</a>
+                                <a href="">Denim Jackets</a></div>
+                                <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                             </div>
+                         </div>
+                         <div id="drop8"> <a href="">LABELS WE LOVE</a>
+                             <div class="Ldrop">
+                                 <div><h4>New Collection</h4>
+                                <a href="">JEANS</a>
+                                <a href="">Shirts</a>
+                                <a href="">Denim Jackets</a></div>
+                                <div><img src="https://th.bing.com/th/id/OIP.xbJG9TQMRzlbVIUFlmjjbAHaLF?pid=ImgDet&rs=1" alt=""></div>
+                             </div>
+                         </div>
+                     </div>
+                 
+
+
+<div class="searchD">
+    <input id="sear" type="text" placeholder="Search Your Products...">
+    <button id="searbtn">SEARCH</button>
+                </div>
+
+<div id="container">
+
+
+
+
+</div>
+
+
+            </body>  
+            <script>
+let cont = document.getElementById("container");
+getData()
+async function getData() {
+    try {
+        let Data = await fetch("https://63cbf841ea8551541518d2eb.mockapi.io/product");
+        Data = await Data.json();
+        console.log(Data)
+        showData(Data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+let arr = JSON.parse(localStorage.getItem("buy"))||[];
+function showData(data){
+   cont.innerHTML = "";
+
+   data.forEach((element) => {
+    let card = document.createElement("div");
+
+    let image = document.createElement("img");
+    let name = document.createElement("h2");
+    let desc = document.createElement("p");
+    let price = document.createElement("h4");
+    let cat = document.createElement("h1");
+    let buy = document.createElement("button");
+    image.setAttribute("src",element.image);
+    name.innerText = element.name;
+    desc.innerText = element.desc;
+    price.innerText = element.price;
+    cat.innerText= element.cata;
+    buy.innerText = "ADD TO CART";
+
+    buy.addEventListener("click",()=>{
+      if(checkDup(element)){
+        // alert.innerText = "Already Placed Order"
+        alert("Already In Cart")
+      }else{
+     arr.push({...element,Quantity:1})
+      localStorage.setItem("buy", JSON.stringify(arr))
+    //   alert.innerText = "Successfully Placed Order"}
+      }
+    })
+    card.append(image,name,desc,price,cat,buy);
+
+    cont.append(card);
+
+   });
+   }
+   function checkDup(ele){
+    for(a=0;a<arr.length;a++){
+    if(ele.id==arr[a].id){
+      return true;
+    }}
+    return false;
+   }
+
+            </script>  
+</html>     

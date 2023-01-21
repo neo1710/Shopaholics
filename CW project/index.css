@@ -54,6 +54,12 @@ margin-right: 5px;
     border: white;
    
 }
+.searchD {
+    display: none;
+}
+.search:hover{
+   background-color: grey;
+}
 .nav3 {
     display: flex;
     align-items: center;
