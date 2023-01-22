@@ -222,6 +222,12 @@ font-size: small;
 .search:hover{
    background-color: grey;
 }
+.cart:hover{
+    background-color: grey;
+ }
+.account:hover{
+    background-color: grey;
+ }
 
 .searchD {
     width: 20%;
@@ -276,6 +282,67 @@ font-size: small;
     background-color: aquamarine;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width:800px) {
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+   #container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+   }
+}
+
+@media screen and (max-width:400px) {
+    .nav1 {
+        display: none;
+    }
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+   #container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+   }
+}
             </style>
         </head>
         <body>
@@ -292,8 +359,8 @@ font-size: small;
                         <p>Free Shipping on Orders $50+ <a href="./details.html">Details</a></p>
                         <a href="./index.html"><img src="./shopaholics2.png" alt=""></a>
                         <div><button  onclick="window.location.href='./search.html'" class="search"><img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt=""></button>
-                            <button><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-                        <button><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
+                            <button onclick="window.location.href='./account.html'" class="account"><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+                        <button onclick="window.location.href='./cart.html'" class="cart"><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
                 
                     </div>
                 
@@ -400,17 +467,36 @@ font-size: small;
             </body>  
             <script>
 let cont = document.getElementById("container");
-getData()
-async function getData() {
-    try {
-        let Data = await fetch("https://63cbf841ea8551541518d2eb.mockapi.io/product");
-        Data = await Data.json();
-        console.log(Data)
-        showData(Data)
-    } catch (error) {
-        console.log(error)
-    }
+let Data = [{name: "Versity Jacket",desc:"Best unisex jacket and trending jacket",image:"https://th.bing.com/th/id/OIP.V3cC97Z5T8TcnQAkDkcKcwHaHa?pid=ImgDet&rs=1",cata:"Jackets" , price:"4000"}
+,{name: "Lether Jackets",desc:"Trending jacket",image:"https://wikimetal.info/wp-content/uploads/2020/04/Black-leather-jacket-for-men-1.jpg",cata:"Jackets" , price:"5000"},
+{name: "Crop Top",desc:"crop top for women latest trend",image:"https://cdn.tobi.com/product_images/lg/1/black-all-day-everyday-halter-crop-top.jpg",cata:"Top" , price:"2500"},
+{name:"Jeans shorts",desc:"For women",image:"https://cdn.shopify.com/s/files/1/0293/9277/products/Fashion_Nova_03-23-17-083.jpg?v=1490305982",cata:"Jeans" , price:"2000"},
+{name: "Unisex Jeans",desc:"trending unisex Jeans",image:"https://th.bing.com/th/id/OIP.rHBKzAJOeJPcGma1e8kzUgHaI0?pid=ImgDet&rs=1",cata:"Jeans" , price:"3800"},{name: "Hoody",desc:"Best hoody for winter",image:"https://th.bing.com/th/id/OIP.GIuCd0cWJAB_3wxVFCOS1AHaJY?pid=ImgDet&rs=1",cata:"Hoody" , price:"2500"},{name: "Fury Hoody",desc:"New style Hoody and trending jacket",image:"https://th.bing.com/th/id/OIP.ok_pO-18vgaMjyLjOz0oSgHaHa?pid=ImgDet&rs=1",cata:"Hoody" , price:"1500"},
+{name: "Versity Jacket New",desc:"Best unisex jacket and trending jacket",image:"https://th.bing.com/th/id/OIP.G-tRW2rzgxZpjiR74W38DwHaHa?pid=ImgDet&rs=1",cata:"Jackets" , price:"4800"}]
+showData(Data)
+
+let filbtn= document.getElementById("searbtn");
+
+filbtn.addEventListener("click" , ()=>{
+   filtered(Data);
+    })
+
+   
+function filtered(data){
+ let find = document.getElementById("sear");
+ data = data.filter((ele)=>{
+   let input = ele.cata;
+  let res = find.value;
+ if(input.toLowerCase().includes(res.toLowerCase())){
+ 
+  return true;
+ }
+ else{
+   return false }
+})
+showData(data);
 }
+
 let arr = JSON.parse(localStorage.getItem("buy"))||[];
 function showData(data){
    cont.innerHTML = "";
@@ -438,6 +524,7 @@ function showData(data){
       }else{
      arr.push({...element,Quantity:1})
       localStorage.setItem("buy", JSON.stringify(arr))
+      alert("Added to Cart")
     //   alert.innerText = "Successfully Placed Order"}
       }
     })
@@ -449,7 +536,7 @@ function showData(data){
    }
    function checkDup(ele){
     for(a=0;a<arr.length;a++){
-    if(ele.id==arr[a].id){
+    if(ele.name==arr[a].name){
       return true;
     }}
     return false;

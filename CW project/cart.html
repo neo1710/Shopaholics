@@ -227,7 +227,103 @@
         .account:hover{
         background-color: grey;
         }
-        
+        @media screen and (max-width:800px) {
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+}
+@media screen and (max-width:400px) {
+    .nav1 {
+        display: none;
+    }
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: rgb(175, 180, 178);
+    width: 80%;
+    gap: 10px;
+    margin: auto;
+}
+#container > div {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+#container > div img{
+    width: 100%;
+}
+#container > div > h2 {
+
+    text-align: center;
+}
+#container > div > h4 {
+  
+    text-align: center;
+}
+#container > div > p{
+    
+    text-align: center;
+}
+#container > div > h1 {
+ 
+    text-align: center;
+}
+#container > div > button {
+    display: block;
+   color: black;
+  margin: auto;
+    background-color: aquamarine;
+    margin-bottom: 10px;
+}
+
+body > p {
+font-weight: bolder;
+font-size: large;
+text-align: center;
+}
+
         </style>
 </head>
 <body>
@@ -244,7 +340,7 @@
                 <a href="./index.html"><img src="./shopaholics2.png" alt=""></a>
                 <div><button  onclick="window.location.href='./search.html'" class="search"><img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt=""></button>
                     <button onclick="window.location.href='./account.html'" class="account"><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-                <button onclick="window.location.href='./cart.html'" class="cart.html"><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
+                <button onclick="window.location.href='./cart.html'" class="cart"><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
         
             </div>
         
@@ -333,7 +429,47 @@
                  </div>
              </div>
 
-             
-          
+             <p>Total cart value -:<span id="total">0</span></p>
+
+          <div id="container">
+
+          </div>
 </body>
+<script>
+    let tot = document.getElementById("total")
+    let cont=document.getElementById("container");
+let data = JSON.parse(localStorage.getItem("buy"));
+showData(data)
+for(a=0;a<data.length;a++){
+   let ad= data[a].price ;
+   let add =tot.innerText;
+  total= Number(ad)+Number(add);
+   tot.innerText=total
+}
+
+    function showData(data){
+   cont.innerHTML = "";
+
+   data.forEach((element) => {
+    let card = document.createElement("div");
+    
+    let image = document.createElement("img");
+    let name = document.createElement("h2");
+    let desc = document.createElement("p");
+    let price = document.createElement("h4");
+    let cat = document.createElement("h1");
+    
+    image.setAttribute("src",element.image);
+    name.innerText = element.name;
+    desc.innerText = element.desc;
+    price.innerText = element.price;
+    cat.innerText= element.cata;
+   
+    card.append(image,name,desc,price,cat);
+
+    cont.append(card);
+
+   });
+   }
+</script>
 </html>
