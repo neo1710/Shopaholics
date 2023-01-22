@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+<style>
+* {
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav1 {
+    display: flex;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+}
+.nav1 div {
+    display: flex;
+    align-items: center;
+}
+.nav1 h5 {
+    color: white;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.nav1 a {
+color: white;
+margin-right: 5px;
+}
+.nav2 {
+    display: flex;
+  width: 100%;
+  justify-content: space-between;
+    align-items: center;
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+ margin-bottom: 40px;
+    
+}
+.nav2 > a{
+    width: 15%;
+}
+.nav2 >a> img {
+    width: 100%;
+
+}
+.nav2 > div {
+    width: 20%;
+}
+.nav2>div>button>img{
+    width: 50%;
+}
+.nav2 > div >button {
+    backface-visibility: hidden;
+    width: 20%;
+  height: 40px;
+    background-color: white;
+    border: white;
+   
+}
+
+
+.search:hover{
+background-color: grey;
+}
+.cart:hover{
+background-color: grey;
+}
+.account:hover{
+background-color: grey;
+}
+.sign-div {
+width: 35%;
+margin: auto;
+padding-top: 20px;
+padding-bottom: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.sign-div p{
+ text-align: center;   
+}
+.sign-div >h1{
+ text-align: center; 
+ margin-top: 20px;  
+}
+.ema {
+display: block;
+margin: auto;
+}
+.pass {
+display: block;
+margin: auto;
+margin-top: 10px;
+}
+.sign-div button{
+    display: block;
+margin: auto; 
+margin-top: 10px;  
+}
+@media screen and (max-width:800px) {
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+}
+@media screen and (max-width:400px) {
+    .nav1 {
+        display: none;
+    }
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+}
+.tweet {
+    height: 20px;
+    width: 60%;
+    border: none;
+    background-color: skyblue;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.goog {
+    height: 20px;
+    width: 60%;
+    border: none;
+    background-color: blue;
+    border-radius: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.sign {
+    height: 20px;
+    border: none;
+    width: 60%;
+    border-radius: 20px;
+    background-color: #1c8adb;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.ema {
+    height: 30px;
+    width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+.pass {
+    height: 30px;
+    width: 80%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="nav1">
+        <div><h5>APP EXCLUSIVE | $100 off $250 | $200 off $500 | Code: 1176</h5>
+        <a href="">Exclusions & Details</a>
+        <a href="">DOWNLOAD THE APP</a>
+        <a href="">SHOP NOW</a></div>
+        <a href="">Enable Accessibilty</a>
+        
+            </div>
+            <div class="nav2">
+                <p>Free Shipping on Orders $50+ <a href="./details.html">Details</a></p>
+                <a href="./index.html"><img src="./shopaholics2.png" alt=""></a>
+                <div><button  onclick="window.location.href='./search.html'" class="search"><img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt=""></button>
+                    <button onclick="window.location.href='./account.html'" class="account"><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+                <button onclick="window.location.href='./cart.html'" class="cart"><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
+        
+            </div>
+        
+            
+  
+
+             <div class="sign-div">
+                <h1>SIGN UP HERE</h1>
+                <form>
+             <input type="email" class="ema" placeholder="YOUR EMAIL">
+             <input type="password" class="pass" placeholder="PASSWORD">
+             <p><span><input type="checkbox"></span><span>I agree to the terms of service</span></p>
+             <button type="submit" class="sign">SIGN UP</button>
+             <hr>
+             <p class="or">OR</p>
+             <button class="tweet">LOGIN WITH Twitter</button>
+             <button class="goog">LOGIN WITH Facebook</button>
+             <p>Do you have an account ? <a href="">sign in</a></p>
+                </form>
+
+             </div>
+         
+</body>
+
+<script>
+    let form = document.querySelector("form");
+     let ema = document.querySelector(".ema");
+     let pass = document.querySelector(".pass");
+
+    form.addEventListener("submit",(e)=>{
+        e.preventDefault();
+        let email = ema.value;
+        let pas = pass.value;
+       
+            if(pas.length<8){
+            alert("Password should be longer than 8 letters")
+        }else{alert("Singned up successful")}
+        
+        
+    })
+
+
+</script>
+
+</html>

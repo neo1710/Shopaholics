@@ -54,6 +54,15 @@ margin-right: 5px;
     border: white;
    
 }
+.cart:hover{
+    background-color: grey;
+ }
+.account:hover{
+    background-color: grey;
+ }
+.search:hover{
+   background-color: grey;
+}
 .nav3 {
     display: flex;
     align-items: center;
@@ -61,14 +70,153 @@ margin-right: 5px;
     width: 70%;
     margin: auto;
     margin-top: 20px;
+    font-family: Arial,Arial, Helvetica, sans-serif;
 }
-.nav3 > a {
+.Mdrop {
+    display: none;
+}
+.Wdrop {
+    display: none;
+}
+.Jdrop {
+    display: none;
+}
+.Ndrop {
+    display: none;
+}
+.Sdrop {
+    display: none;
+}
+.Rdrop {
+    display: none;
+}
+.Ldrop{
+    display: none;
+}
+.Cdrop{
+    display: none;
+}
+.Wdrop div {
+    width: 40%;
+}
+
+.Wdrop img{
+   width: 100%; 
+}
+#drop1:hover .Wdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Mdrop div {
+    width: 40%;
+}
+.Mdrop img{
+   width: 100%; 
+}
+#drop2:hover .Mdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Jdrop div {
+    width: 40%;
+}
+.Jdrop img{
+   width: 100%; 
+}
+#drop3:hover .Jdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Ndrop div {
+    width: 40%;
+}
+.Ndrop img{
+   width: 100%; 
+}
+#drop4:hover .Ndrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+
+.Sdrop div {
+    width: 40%;
+}
+.Sdrop img{
+   width: 100%; 
+}
+#drop5:hover .Sdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Rdrop div {
+    width: 40%;
+}
+.Rdrop img{
+   width: 100%; 
+}
+#drop6:hover .Rdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+.Cdrop div {
+    width: 40%;
+}
+.Cdrop img{
+   width: 100%; 
+}
+#drop7:hover .Cdrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.Ldrop div {
+    width: 40%;
+}
+.Ldrop img{
+   width: 100%; 
+}
+#drop8:hover .Ldrop {
+    display: flex;
+    position: absolute;
+    background-color: white;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.nav3 a {
 color: black;
 text-decoration: none;
 margin-bottom: 10px;
+display: block;
+font-weight: bolder;
+font-size: small;
 }
 #cont1 {
-    background-image: url("https://i.pinimg.com/originals/d7/99/51/d79951fab15f0baad7aa96ff0ee14b05.jpg"),
+    background-image: url("https://th.bing.com/th/id/OIP.VrxYOm7nggyxIZPadVv3gQHaJ4?pid=ImgDet&rs=1"),
     url("https://wasabi-files.lbstatic.nu/files/looks/medium/2017/04/19/5168414_modnapolka.jpg?1492634315"),
     url("https://sharpmagazine.com/wp-content/uploads/2016/02/DSC3912-836x1255.jpg")
     ;
@@ -142,7 +290,7 @@ h2 {
    gap: 20px; 
 }
 .cont4 {
-    background-color: grey;
+    background-color: rgb(233, 218, 218);
 }
 .cont3 p{
     display: block;
@@ -158,34 +306,38 @@ h2 {
     color: white;
 }
 
-.cont3 >div div:nth-child(1){
+.cont3 > div > div {
     height: 400px;
+}
+
+.cont3 >div div:nth-child(1){
+ 
     background-image: url("https://i.pinimg.com/originals/8a/3f/d6/8a3fd60fc9aa0550bd7d3b1457d8d208.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }
 .cont3 > div div:nth-child(2){
-    height: 400px;
+   
     background-image: url("https://th.bing.com/th/id/OIP.UhgPZsJSlXG69FNCVAmyaAHaJ4?pid=ImgDet&rs=1");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(3){
-    height: 400px;
+    
     background-image: url("https://th.bing.com/th/id/OIP.-oDpZeZaNueinkkDlQ3rxAHaKT?pid=ImgDet&rs=1");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(4){
-    height: 400px;
+ 
     background-image: url("https://i.pinimg.com/originals/17/ed/da/17eddaa417f3609c82c8fb8dc58d8063.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(5){
-    height: 400px;
+ 
     background-image: url("https://th.bing.com/th/id/OIP.l5V0Vo9xkGz24d8s3UKONAHaJ4?pid=ImgDet&rs=1");
     background-size: 100%;
     background-repeat: no-repeat;
 }.cont3 > div div:nth-child(6){
-    height: 400px;
+ 
     background-image: url("https://i.pinimg.com/originals/f5/6e/88/f56e88657e1457fefcfb2e0bb4452e7e.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
@@ -194,7 +346,11 @@ h2 {
    margin: auto;
     background-color: white;
     width: 80%;
-    height: 1000px;
+ 
+}
+.cont4 >h2 {
+    
+    margin-top: 20px ;
 }
 .cont4 >div {
     width: 100%;
@@ -202,9 +358,78 @@ h2 {
     justify-content: space-around;
 }
 .cont4 > div div {
+
     width: 20%;
 }
- @media screen and (max-width:700px) {
+.cont4 img {
+    width: 100%;
+}
+.cont4 {
+    text-align: center;
+}
+.cont4 a {
+    display: block;
+    text-align: center;
+    color: black;
+}
+ @media screen and (max-width:800px) {
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+   #cont1 > div>a{
+    display: none;
+    margin-left: 5px;
+    color: black;
+   
+   }
+   .cont2 {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: grey 1px solid;
+}
+.cont2 div{
+  width:80%; 
+}
+#icons {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px; 
+ }
+ .cont4 >div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+ }
+}
+ @media screen and (max-width:400px) {
+
+    .end {
+        display: none;
+    }
+    .nav1 {
+        display: none;
+    }
     .nav3 {
         display: none;
         align-items: center;
@@ -246,7 +471,24 @@ h2 {
 }
 #icons {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     gap: 20px; 
  }
+ .cont4>div {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+ }
+}
+
+.end {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.end >div{
+width: 20%;
+}
+.end img{
+width: 100%;
 }

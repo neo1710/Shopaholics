@@ -78,26 +78,88 @@ color: black;
 text-decoration: none;
 margin-bottom: 10px;
 }
+.cart:hover{
+    background-color: grey;
+ }
+.account:hover{
+    background-color: grey;
+ }
+.search:hover{
+   background-color: grey;
+}
+@media screen and (max-width:800px) {
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+}
+@media screen and (max-width:400px) {
+    .nav1 {
+        display: none;
+    }
+    .nav3 {
+        display: none;
+        align-items: center;
+        justify-content: space-around;
+        width: 70%;
+        margin: auto;
+        margin-top: 20px;
+    } 
+    .nav2 {
+        display: flex;
+        justify-content: space-around;
+    }
+    .nav2 > div {
+        display: none;
+        width: 20%;
+    }
+    .nav2 > p {
+     display: none;
+    }
+   #heading1 {
+    display: none;
+   }
+}
     </style>
 </head>
 <body>
 
     <div class="nav1">
         <div><h5>APP EXCLUSIVE | $100 off $250 | $200 off $500 | Code: 1176</h5>
-        <a href="">Exclusions & Details</a>
+        <a href="./details.html">Exclusions & Details</a>
         <a href="">DOWNLOAD THE APP</a>
-        <a href="">SHOP NOW</a></div>
+        <a href="./search.html">SHOP NOW</a></div>
         <a href="">Enable Accessibilty</a>
         
             </div>
             <div class="nav2">
                 <p>Free Shipping on Orders $50+ <a href="./details.html">Details</a></p>
                 <img src="./shopaholics2.png" alt="">
-                <div><button><img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt=""></button>
-                    <button><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
-                <button><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
+                <div><button onclick="window.location.href='./search.html'" class="search"><img src="https://cdn.onlinewebfonts.com/svg/img_197388.png" alt=""></button>
+                    
+                    <button  onclick="window.location.href='./account.html'" class="account"><img src="https://th.bing.com/th/id/R.0abaab7aeb9e874931e10d1eacfba6ef?rik=3mcfjUrOvCSmXg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_311319.png&ehk=tdQjQFw5%2fphNcenZBMSO0WptuMrnBxvboOPl1a0%2bnjw%3d&risl=&pid=ImgRaw&r=0" alt=""></button>
+                <button  onclick="window.location.href='./cart.html'" class="cart"><img src="https://th.bing.com/th/id/R.17121745259da3599aa59e0e9052ef69?rik=dSlaTqfIG1Kp8w&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_290752.png&ehk=KyZsYlTEVMHhff30QITyagIMMtQxN0mhynZGXscwbcc%3d&risl=&pid=ImgRaw&r=0" alt=""></button></div>
         
             </div>
+        
         
             <div class="nav3">
                 <a href="">WOMEN</a>
